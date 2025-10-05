@@ -1,0 +1,15 @@
+# ไฟล์ข้อมูลลับ ห้ามอัปโหลดเด็ดขาด!
+.env
+.env.*
+
+# Dependencies ของ Node.js (ใหญ่มากและไม่จำเป็น)
+node_modules/
+
+# ไฟล์ Build ของ Vite (จะถูกสร้างตอน Deploy)
+dist/
+.vite/
+
+# ไฟล์ Log และไฟล์ชั่วคราวอื่นๆ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
