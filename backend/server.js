@@ -20,7 +20,7 @@ app.use(cors({
 app.use(express.json()); // สำหรับแปลง request body เป็น JSON
 
 // 4. เชื่อมต่อ MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URL)
   .then(() => console.log("✅ Connected to MongoDB"))
   .catch(err => console.error("❌ MongoDB Error:", err));
 

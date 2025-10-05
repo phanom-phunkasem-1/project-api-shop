@@ -16,7 +16,7 @@ function ProductList() {
     const fetchProducts = async () => {
       try {
         // ดึง URL ของ API จาก environment variable
-        const apiUrl = `${import.meta.env.VITE_API_URL}/products`;
+        const apiUrl = `${import.meta.env.VITE_API_URL}/api/products`;
         
         const response = await fetch(apiUrl);
 
