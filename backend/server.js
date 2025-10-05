@@ -4,7 +4,11 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import productRoutes from "./routes/productRoutes.js"; // ✅ เพิ่มตรงนี้
+// backend/server.js
 
+app.use(cors({
+  origin: "https://project-api-shop-zhlw.vercel.app/" // ❗️สำคัญ: แก้เป็น URL ของคุณ
+}));
 dotenv.config();
 
 const app = express();
