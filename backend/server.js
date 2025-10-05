@@ -14,10 +14,10 @@ const app = express();
 
 // 3. กำหนดค่า Middleware ทั้งหมดที่นี่
 app.use(cors({
-  // ระบุ URL ของ Frontend ที่จะอนุญาต (เอา / ปิดท้ายออก)
-  origin: "https://project-api-shop-zhlw.vercel.app" 
+  origin: "https://project-api-shop.vercel.app" // ❗️ URL ของ Vercel ห้ามมี / ปิดท้าย
 }));
-app.use(express.json()); // สำหรับแปลง request body เป็น JSON
+
+app.use(express.json());
 
 // 4. เชื่อมต่อ MongoDB
 mongoose.connect(process.env.MONGO_URL)
